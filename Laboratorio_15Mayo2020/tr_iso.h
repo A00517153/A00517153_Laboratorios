@@ -1,3 +1,11 @@
+/*----------------------------------
+ *
+ * Laboratorio: POO y C++
+ * Fecha: 15-Mayo-2020
+ * Autor: A00517153 Johann Palomino
+ *
+ *----------------------------------*/
+
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -70,5 +78,5 @@ double Tr_Iso::get_area(){
 
 void Tr_Iso::calc_data(){
   perimetro=2*lado_a+lado_b;
-  area=sqrt(pow(lado_a*lado_b/2,2)-pow(lado_b/2,4));
+  area=(double)(sqrt(pow(lado_a*lado_b/2,2)-pow(lado_b/2,4)));
 }
