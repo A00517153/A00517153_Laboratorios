@@ -16,15 +16,15 @@
 
 class two_day_package:public package{
   protected:
-    float fixed_rate;
+    float fixed_fare;
   public:
     two_day_package():package(){};
     two_day_package(string r, string d, float w, float cpk,float fr) :package(r,d,w,cpk){
-      fixed_rate=fr;
+      fixed_fare=fr;
     };
 
     double calc_cost() const{
-      return double(fixed_rate + package::calc_cost());
+      return double(fixed_fare + package::calc_cost());
     };
     string display_info() {
       set_info();

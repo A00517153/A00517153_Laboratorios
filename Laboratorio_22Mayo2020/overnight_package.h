@@ -16,15 +16,15 @@
 
 class overnight_package:public package{
   protected:
-    float rate_per_kg;
+    float fare_per_kg;
   public:
     overnight_package():package(){};
     overnight_package(string r, string d, float w, float cpk,float rpk) :package(r,d,w,cpk){
-      rate_per_kg=rpk;
+      fare_per_kg=rpk;
     };
 
     double calc_cost() const{
-      return double( (rate_per_kg * weight) + package::calc_cost() );
+      return double( (fare_per_kg * weight) + package::calc_cost() );
     };
     string display_info() {
       set_info();
