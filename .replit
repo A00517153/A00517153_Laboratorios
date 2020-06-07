@@ -1,2 +1,3 @@
+
 language = "cpp"
-run = "g++ main.cpp && ./a.out"
+run = "cd && cd && cd A00517153Laboratorios/Laboratorio_08Junio2020/ && g++ main.cpp && ./a.out"
