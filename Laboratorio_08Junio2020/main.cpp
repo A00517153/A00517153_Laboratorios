@@ -7,9 +7,15 @@
  *----------------------------------*/
 #include <iostream>
 
+#include "grader.h"
+
 using namespace std;
 
 int main(){
-  cout<<"Hello World!"<<endl;
+  char guide[]="112341423114322314231442314231223422";
+  grader i(guide);
+  char id[]="A00517153";
+  char ans[]="11 3 1133 22322314231432211231 34 2";
+  cout<<i.grade(id,ans)<<endl;
   return 0;
 }
